@@ -1,6 +1,6 @@
 import requests
 
-TELEGRAM_TOKEN = "8845119426:AAEd8BW50q6yKz4K-8tz4D7ABi-lFlRoo5Y"
+TELEGRAM_TOKEN = "NEW_TOKEN_HERE"
 CHAT_ID = "417209770"
 
 URL = "https://api.metals.live/v1/spot/silver"
@@ -14,7 +14,10 @@ def send(msg):
 
 def get_price():
     r = requests.get(URL).json()
-    print(r)  # برای دیباگ
+    print(r)
+
+    if not r or "price" not in r[0]:
+        raise Exception("Invalid API response")
 
     return float(r[0]["price"])
 
