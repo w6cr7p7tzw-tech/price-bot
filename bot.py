@@ -1,7 +1,7 @@
 import requests
 
-TELEGRAM_TOKEN = 8845119426:AAEd8BW50q6yKz4K-8tz4D7ABi-lFlRoo5Y
-CHAT_ID = 417209770
+TELEGRAM_TOKEN = "8845119426:AAEd8BW50q6yKz4K-8tz4D7ABi-lFlRoo5Y"
+CHAT_ID = "417209770"
 
 URL = "https://api.metals.live/v1/spot/silver"
 
