@@ -1,6 +1,6 @@
 import requests
 
-TELEGRAM_TOKEN = "NEW_TOKEN_HERE"
+TELEGRAM_TOKEN = "8624768508:AAEMlV3tf8xrEXjd2llr758JCEvf5EEoN9E"
 CHAT_ID = "417209770"
 
 URL = "https://api.metals.live/v1/spot/silver"
