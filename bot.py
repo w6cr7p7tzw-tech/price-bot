@@ -14,6 +14,8 @@ def send(msg):
 
 def get_price():
     r = requests.get(URL).json()
+    print(r)  # برای دیباگ
+
     return float(r[0]["price"])
 
 price = get_price()
